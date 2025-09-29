@@ -1,0 +1,175 @@
+
+.chatWindow{
+    /* background: linear-gradient(90deg, #FED6E3 0%, #A8EDEA 100%); */
+    background-color: #212121;
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+     text-align: center; 
+}
+
+   
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar span{
+    margin: 1rcm 2rcm;
+    
+     
+}
+.userIconDiv{
+     margin: 1rcm 2rcm;
+     
+}
+.userIcon{
+    background-color:rgba(45, 13, 132, 0.857);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.userIcon:hover {
+    background-color: #fff;       
+    color: #339cff;                
+    box-shadow: 0 0 8px rgba(255,255,255,0.8); 
+    /* transform: scale(1.1);          */
+}
+/* chat input*/
+.chatInput{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputBox{
+    width: 100%;
+    position:relative;
+    max-width: 700px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#Submit{
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    position: absolute;
+   right:15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+ /* #Submit i:hover{
+    color:#212121;
+
+}  */
+input{
+    width: 100%;
+    border: none;
+    /* background-color:rgba(255, 255, 255, 0.08); */
+     background-color: rgba(19, 20, 20, 0.12); 
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 14px;
+}
+input:focus{
+    outline:none;
+}
+.info{
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    color: #b5b5b5b5;
+}
+/* extra */
+#Submit i {
+  color: #339cff;
+  transition: 0.2s ease;
+}
+
+#Submit i:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2); /* white glow-like bg */
+  border-radius: 50%;
+  padding: 5px;
+  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* white glow */
+}
+.dropDownItem{
+    font-size: 0.9rcm;
+    margin:0.3rem 0rem;
+    padding:0.5rem 0.2rem;
+    cursor:pointer;
+
+
+}
+.dropDown{
+    position:absolute;
+    top:4rem;
+    right:4rem;
+    width: 150px;
+    background-color: #323232;
+    padding:0.3rem 0.5rem;
+    border-radius: 6px;
+    text-align: left;
+    z-index: 1000;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+.dropDownItem:hover{
+    background-color: rgba(180, 180, 180, 0.1);
+    border-radius: 6px;
+}
+
+/* //extra */
+/* LIGHT THEME */
+.chatWindow.light {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.chatWindow.light input {
+    background-color: #fff;
+    color: #000;
+}
+
+.chatWindow.light .dropDown {
+    background-color: #fff;
+    color: #000;
+}
+
+.chatWindow.light .dropDownItem:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* DARK THEME */
+.chatWindow.dark {
+    background-color: #212121;
+    color: #fff;
+}
+
+.chatWindow.dark input {
+    background-color: rgba(19, 20, 20, 0.12);
+    color: #fff;
+}
+
+.chatWindow.dark .dropDown {
+    background-color: #323232;
+    color: #fff;
+}
+
+.chatWindow.dark .dropDownItem:hover {
+    background-color: rgba(180, 180, 180, 0.1);
+}
+
+

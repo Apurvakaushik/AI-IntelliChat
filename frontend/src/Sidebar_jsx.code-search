@@ -1,0 +1,9 @@
+# Query: Sidebar.jsx
+# ContextLines: 1
+
+1 result - 1 file
+
+frontend\src\App.jsx:
+  2  import './App.css'
+  3: import Sidebar from './sidebar.jsx';
+  4  import ChatWindow from './ChatWindow.jsx';
